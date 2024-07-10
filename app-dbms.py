@@ -457,7 +457,7 @@ class DBMSApp(tk.Tk):
                         self.clean_string(last_name),
                         dob,
                         None,  
-                        None,  # city
+                        None,  
                         state,
                         None,  # zip
                         medicare_number

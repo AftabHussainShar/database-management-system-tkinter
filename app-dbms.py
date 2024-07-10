@@ -456,7 +456,7 @@ class DBMSApp(tk.Tk):
                         self.clean_string(first_name),
                         self.clean_string(last_name),
                         dob,
-                        None,  # address
+                        None,  
                         None,  # city
                         state,
                         None,  # zip

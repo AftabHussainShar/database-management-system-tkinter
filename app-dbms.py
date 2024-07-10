@@ -459,7 +459,7 @@ class DBMSApp(tk.Tk):
                         None,  
                         None,  
                         state,
-                        None,  # zip
+                        None,  
                         medicare_number
                     )
 

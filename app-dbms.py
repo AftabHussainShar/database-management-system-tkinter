@@ -566,7 +566,7 @@ class DBMSApp(tk.Tk):
                 
                 for col in selected_columns:
                     if col in df.columns:
-                        if col == 'dob':  # Example formatting for date column
+                        if col == 'dob':
                             df[col] = df[col].apply(self.format_date)
                         else:
                             df[col] = df[col].apply(self.clean_string)

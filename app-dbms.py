@@ -440,7 +440,6 @@ class DBMSApp(tk.Tk):
                     state = row[selected_columns[2]]
                     medicare_number = self.clean_string(row[selected_columns[3]])
 
-                    # Split full name into first name and last name
                     if pd.notnull(full_name):
                         names = full_name.split()
                         first_name = names[0]

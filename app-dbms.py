@@ -564,7 +564,6 @@ class DBMSApp(tk.Tk):
             if file_path and selected_columns:
                 df = pd.read_excel(file_path)
                 
-                # Clean and format data
                 for col in selected_columns:
                     if col in df.columns:
                         if col == 'dob':  # Example formatting for date column

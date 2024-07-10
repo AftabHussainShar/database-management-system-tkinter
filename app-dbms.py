@@ -571,7 +571,6 @@ class DBMSApp(tk.Tk):
                         else:
                             df[col] = df[col].apply(self.clean_string)
                 
-                # Example: Connecting to MySQL and inserting data
                 connection = mysql.connector.connect(host='localhost', database='search_engine_new', user='root', password='')
                 cursor = connection.cursor()
 

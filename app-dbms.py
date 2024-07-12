@@ -558,7 +558,6 @@ class DBMSApp(tk.Tk):
                     provider_name = row[selected_columns[3]]
                     insights_message = row[selected_columns[4]]
 
-                    # Split full name into first name and last name
                     if pd.notnull(full_name):
                         names = full_name.split(',')
                         if len(names) == 2:

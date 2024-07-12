@@ -506,8 +506,8 @@ class DBMSApp(tk.Tk):
                         self.clean_string(first_name),
                         self.clean_string(last_name),
                         dob,
-                        None,  # address
-                        None,  # city
+                        None, 
+                        None,  
                         state,
                         None,  # zip
                         medicare_number

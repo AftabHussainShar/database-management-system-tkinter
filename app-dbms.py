@@ -863,7 +863,6 @@ class DBMSApp(tk.Tk):
                     dr_name = row[selected_columns[8]]
                     dr_npi = row[selected_columns[9]]
 
-                    # Handle NaN values
                     if pd.isnull(full_name):
                         full_name = None
                     if pd.isnull(medicare_number):

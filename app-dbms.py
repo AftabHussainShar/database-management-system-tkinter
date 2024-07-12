@@ -1057,15 +1057,13 @@ class DBMSApp(tk.Tk):
             if file_path and selected_columns:
                 df = pd.read_excel(file_path)
                 
-                # Clean and format data
                 for col in selected_columns:
                     if col in df.columns:
-                        if col == 'dob':  # Example formatting for date column
+                        if col == 'dob': 
                             df[col] = df[col].apply(self.format_date)
                         else:
                             df[col] = df[col].apply(self.clean_string)
                 
-                # Example: Connecting to MySQL and inserting data
                 connection = mysql.connector.connect(host='localhost', database='search_engine_new', user='root', password='')
                 cursor = connection.cursor()
 

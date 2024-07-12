@@ -707,11 +707,10 @@ class DBMSApp(tk.Tk):
             else:
                 names = full_name.split()
                 first_name = names[0]
-                # Identify parts that belong to the last name
                 last_name_parts = []
                 for part in names[1:]:
                     if len(part) <= 2 and part.isalpha():
-                        continue  # Skip initials or abbreviations
+                        continue
                     last_name_parts.append(part)
                 last_name = ' '.join(last_name_parts)
 

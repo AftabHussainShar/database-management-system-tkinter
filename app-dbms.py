@@ -700,13 +700,11 @@ class DBMSApp(tk.Tk):
         last_name = None
         
         if pd.notnull(full_name):
-            # Split by comma to handle cases like "Last Name, First Name(s)"
             names = full_name.split(',')
             if len(names) == 2:
                 last_name = names[0].strip()
                 first_name = names[1].strip()
             else:
-                # Split by spaces to handle cases like "First Name Middle Initials Last Name"
                 names = full_name.split()
                 first_name = names[0]
                 # Identify parts that belong to the last name

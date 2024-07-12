@@ -888,7 +888,6 @@ class DBMSApp(tk.Tk):
                     if first_name:
                         first_name = ' '.join([name for name in first_name.split() if len(name) > 1 or name.islower()])
 
-                    # Check if medicare_number already exists in raw or checked table
                     query_check_raw = "SELECT COUNT(*) FROM raw WHERE medicare_number = %s"
                     cursor.execute(query_check_raw, (medicare_number,))
                     result_raw = cursor.fetchone()

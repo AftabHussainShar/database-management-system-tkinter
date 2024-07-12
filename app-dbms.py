@@ -746,7 +746,7 @@ class DBMSApp(tk.Tk):
                     ins_name = row[selected_columns[7]]
                     ins_type = row[selected_columns[8]]
                     gender = 'Male' if gender_code == 'M' else 'Female' if gender_code == 'F' else None
-                    # Handle NaN values
+
                     if pd.isnull(full_name):
                         full_name = None
                     if pd.isnull(medicare_number):

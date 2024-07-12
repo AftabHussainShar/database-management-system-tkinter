@@ -903,8 +903,6 @@ class DBMSApp(tk.Tk):
                     if result_checked and result_checked[0] > 0:
                         skipped_count_checked += 1
                         continue
-                    # print(medicare_number)
-                    # Prepare INSERT query
                     query = (
                         "INSERT INTO complete (full_name, first_name, last_name, medicare_number, dob, gender, address, phone, age, alternate_number_landline, dr_name, dr_npi) "
                         "VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"

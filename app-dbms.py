@@ -36,7 +36,6 @@ class DBMSApp(tk.Tk):
         raw_frame.columnconfigure(1, weight=1)
         raw_frame.columnconfigure(2, weight=1)
 
-        # Checked Section
         checked_frame = ttk.Frame(self, padding=(10, 10, 10, 10))
         checked_frame.pack(fill='x', padx=20, pady=10)
         checked_label = ttk.Label(checked_frame, text="CHECKED")
@@ -48,7 +47,6 @@ class DBMSApp(tk.Tk):
         checked_frame.columnconfigure(0, weight=1)
         checked_frame.columnconfigure(1, weight=1)
 
-        # Complete Section
         complete_frame = ttk.Frame(self, padding=(10, 10, 10, 10))
         complete_frame.pack(fill='x', padx=20, pady=10)
         complete_label = ttk.Label(complete_frame, text="COMPLETE")

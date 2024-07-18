@@ -2239,7 +2239,7 @@ class DBMSApp(tk.Tk):
                     for fmt in formats_to_try:
                         try:
                             parsed_date = datetime.strptime(str(date), fmt)
-                            break  # Exit loop if successfully parsed
+                            break  
                         except ValueError:
                             continue  
                     

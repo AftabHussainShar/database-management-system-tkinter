@@ -2228,7 +2228,7 @@ class DBMSApp(tk.Tk):
                         '%m/%d/%Y', '%m-%d-%Y', '%Y-%m-%d',  # Standard formats
                         '%d/%m/%Y', '%d-%m-%Y', '%Y-%d-%m',  # European formats
                         '%Y/%m/%d', '%Y-%m-%d',              # ISO formats
-                        '%m/%d/%y', '%m-%d-%y', '%y-%m-%d',  # Short year formats
+                        '%m/%d/%y', '%m-%d-%y', '%y-%m-%d', 
                         '%d/%m/%y', '%d-%m-%y', '%y-%d-%m',  
                         '%Y/%m/%d %H:%M:%S', '%Y-%m-%d %H:%M:%S', 
                         '%m/%d/%Y %H:%M:%S', '%m-%d-%Y %H:%M:%S',  

@@ -2231,8 +2231,8 @@ class DBMSApp(tk.Tk):
                         '%m/%d/%y', '%m-%d-%y', '%y-%m-%d',  # Short year formats
                         '%d/%m/%y', '%d-%m-%y', '%y-%d-%m',  # Short year European formats
                         '%Y/%m/%d %H:%M:%S', '%Y-%m-%d %H:%M:%S',  # ISO datetime formats
-                        '%m/%d/%Y %H:%M:%S', '%m-%d-%Y %H:%M:%S',  # Datetime formats with time
-                        '%d/%m/%Y %H:%M:%S', '%d-%m-%Y %H:%M:%S',  # European datetime formats
+                        '%m/%d/%Y %H:%M:%S', '%m-%d-%Y %H:%M:%S',  
+                        '%d/%m/%Y %H:%M:%S', '%d-%m-%Y %H:%M:%S',  
                     ]
                     
                     parsed_date = None

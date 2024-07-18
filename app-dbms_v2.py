@@ -2225,7 +2225,7 @@ class DBMSApp(tk.Tk):
                 else:
                     # Define multiple date formats to try parsing
                     formats_to_try = [
-                        '%m/%d/%Y', '%m-%d-%Y', '%Y-%m-%d',  # Standard formats
+                        '%m/%d/%Y', '%m-%d-%Y', '%Y-%m-%d',  
                         '%d/%m/%Y', '%d-%m-%Y', '%Y-%d-%m',  
                         '%Y/%m/%d', '%Y-%m-%d',             
                         '%m/%d/%y', '%m-%d-%y', '%y-%m-%d', 

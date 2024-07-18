@@ -2244,7 +2244,7 @@ class DBMSApp(tk.Tk):
                             continue  # Continue to next format if current one fails
                     
                     if parsed_date is None:
-                        return None  # Return None if all formats fail
+                        return None  
             else:
                 return None
         

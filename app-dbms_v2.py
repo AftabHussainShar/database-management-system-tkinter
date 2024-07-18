@@ -2241,7 +2241,7 @@ class DBMSApp(tk.Tk):
                             parsed_date = datetime.strptime(str(date), fmt)
                             break  # Exit loop if successfully parsed
                         except ValueError:
-                            continue  # Continue to next format if current one fails
+                            continue  
                     
                     if parsed_date is None:
                         return None  

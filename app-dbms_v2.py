@@ -2220,7 +2220,7 @@ class DBMSApp(tk.Tk):
                     except Exception as e:
                         return None
                     
-                elif isinstance(date, (int, float)):  # Handle float or int case (timestamp)
+                elif isinstance(date, (int, float)):  
                     parsed_date = datetime.fromtimestamp(date)
                 else:
                     formats_to_try = [

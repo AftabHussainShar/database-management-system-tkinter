@@ -383,12 +383,10 @@ class DBMSApp(tk.Tk):
         self.total_pages = 0
         self.filtered_data = pd.DataFrame()
 
-        # Initialize filters
         self.clients = tk.StringVar()
         self.dob_from = tk.StringVar()
         self.dob_to = tk.StringVar()
 
-        # Create GUI elements
         self.create_widgets_()
         
     def custom_function9(self, window):

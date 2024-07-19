@@ -394,7 +394,6 @@ class DBMSApp(tk.Tk):
         self.window.title("Raw: Viewer and Filtration")
         self.window.geometry("1350x350")
 
-        # Initialize MySQL connection
         try:
             self.connection = mysql.connector.connect(
                 host='localhost',

@@ -452,7 +452,6 @@ class DBMSApp(tk.Tk):
         filter_button = ttk.Button(filter_frame, text="Filter", command=self.fetch_and_filter_data_2)
         filter_button.grid(row=0, column=4, padx=5, pady=5)
 
-        # Export button
         export_button = ttk.Button(filter_frame, text="Excel", command=self.export_to_excel_2)
         export_button.grid(row=0, column=5, padx=5, pady=5)
 

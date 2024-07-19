@@ -415,7 +415,6 @@ class DBMSApp(tk.Tk):
         self.payer_options = []  
         self.provider_name_options = [] 
 
-        # Create GUI elements
         self.create_widgets_1()
         
     def populate_payer_dropdown(self):

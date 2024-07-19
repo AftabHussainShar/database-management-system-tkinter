@@ -431,7 +431,7 @@ class DBMSApp(tk.Tk):
             query = "SELECT DISTINCT provider_name FROM raw"
             self.cursor.execute(query)
             ins_names = [row[0] for row in self.cursor.fetchall()]
-            self.provider_name['values'] = [""] + ins_names  # Adding empty option
+            self.provider_name['values'] = [""] + ins_names  #
         except mysql.connector.Error as err:
             messagebox.showerror("MySQL Error", f"Error fetching InsName data: {err}")
 

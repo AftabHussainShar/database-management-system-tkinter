@@ -296,7 +296,6 @@ class DBMSApp(tk.Tk):
         dob_from = self.dob_from_entry.get()
         dob_to = self.dob_to_entry.get()
 
-        # Validate and convert active dates
         try:
             active_date_from = datetime.strptime(active_date_from, "%Y-%m-%d").date() if active_date_from else None
             active_date_to = datetime.strptime(active_date_to, "%Y-%m-%d").date() if active_date_to else None
@@ -311,7 +310,6 @@ class DBMSApp(tk.Tk):
             messagebox.showerror("Date Format Error", "Invalid date format for DOB. Please use YYYY-MM-DD.")
             return
 
-        # Construct SQL query based on filters
         query = "SELECT * FROM checked WHERE 1=1"
 
         if ins_type:

@@ -422,7 +422,7 @@ class DBMSApp(tk.Tk):
             query = "SELECT DISTINCT payer FROM raw"
             self.cursor.execute(query)
             ins_types = [row[0] for row in self.cursor.fetchall()]
-            self.payer['values'] = [""] + ins_types  # Adding empty option
+            self.payer['values'] = [""] + ins_types  
         except mysql.connector.Error as err:
             messagebox.showerror("MySQL Error", f"Error fetching InsType data: {err}")
 

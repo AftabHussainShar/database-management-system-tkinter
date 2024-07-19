@@ -439,7 +439,6 @@ class DBMSApp(tk.Tk):
         filter_frame = ttk.Frame(self.window, padding=(10, 10, 10, 0))
         filter_frame.pack(fill=tk.X)
 
-        # Insurance Type dropdown filter
         ttk.Label(filter_frame, text="Payer:", font=("Arial", 8, "bold")).grid(row=0, column=0, padx=5, pady=5)
         self.payer = ttk.Combobox(filter_frame, values=self.payer_options, width=20, state="readonly")
         self.payer.grid(row=0, column=1, padx=5, pady=5)

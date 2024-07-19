@@ -455,7 +455,6 @@ class DBMSApp(tk.Tk):
         export_button = ttk.Button(filter_frame, text="Excel", command=self.export_to_excel_2)
         export_button.grid(row=0, column=5, padx=5, pady=5)
 
-        # Treeview for displaying data
         self.tree = ttk.Treeview(self.window, columns=("medicare_number", "first_name", "last_name", "dob", "address","payer","provider_name"), show="headings")
         self.tree.heading("medicare_number", text="MED ID")
         self.tree.heading("first_name", text="First Name")

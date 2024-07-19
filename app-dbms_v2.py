@@ -412,8 +412,7 @@ class DBMSApp(tk.Tk):
         self.total_pages = 0
         self.filtered_data = pd.DataFrame()
 
-        # Initialize filters
-        self.payer_options = []  # List to hold distinct payer values
+        self.payer_options = []  
         self.provider_name_options = []  # List to hold distinct provider names
 
         # Create GUI elements

@@ -413,7 +413,7 @@ class DBMSApp(tk.Tk):
         self.filtered_data = pd.DataFrame()
 
         self.payer_options = []  
-        self.provider_name_options = []  # List to hold distinct provider names
+        self.provider_name_options = [] 
 
         # Create GUI elements
         self.create_widgets_1()

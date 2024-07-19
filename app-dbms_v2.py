@@ -304,7 +304,6 @@ class DBMSApp(tk.Tk):
             messagebox.showerror("Date Format Error", "Invalid date format for Active Date. Please use YYYY-MM-DD.")
             return
 
-        # Validate and convert DOB dates
         try:
             dob_from = datetime.strptime(dob_from, "%Y-%m-%d").date() if dob_from else None
             dob_to = datetime.strptime(dob_to, "%Y-%m-%d").date() if dob_to else None

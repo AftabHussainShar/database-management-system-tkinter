@@ -334,8 +334,8 @@ class DBMSApp(tk.Tk):
             column_names = [desc[0] for desc in self.cursor.description]
             self.filtered_data = pd.DataFrame(rows, columns=column_names)
             if not self.filtered_data['dob'].empty:
-                self.filtered_data['dob'] = pd.to_datetime(self.filtered_data['dob'], errors='coerce')  # Convert to datetime, handle errors
-                self.filtered_data['dob'] = self.filtered_data['dob'].dt.strftime('%m/%d/%Y')  # Format 'dob' column to MM/DD/YYYY
+                self.filtered_data['dob'] = pd.to_datetime(self.filtered_data['dob'], errors='coerce')  
+                self.filtered_data['dob'] = self.filtered_data['dob'].dt.strftime('%m/%d/%Y')  
         except mysql.connector.Error as err:
             messagebox.showerror("MySQL Error", f"Error fetching data: {err}")
         file_path = filedialog.asksaveasfilename(defaultextension=".xlsx", filetypes=[("Excel files", "*.xlsx")])

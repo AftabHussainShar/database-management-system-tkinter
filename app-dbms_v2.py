@@ -449,7 +449,6 @@ class DBMSApp(tk.Tk):
         self.provider_name.grid(row=0, column=3, padx=5, pady=5)
         self.populate_provider_dropdown()
 
-        # Filter button
         filter_button = ttk.Button(filter_frame, text="Filter", command=self.fetch_and_filter_data_2)
         filter_button.grid(row=0, column=4, padx=5, pady=5)
 

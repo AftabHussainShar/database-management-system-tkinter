@@ -436,7 +436,6 @@ class DBMSApp(tk.Tk):
             messagebox.showerror("MySQL Error", f"Error fetching InsName data: {err}")
 
     def create_widgets_1(self):
-        # Frame for filter inputs
         filter_frame = ttk.Frame(self.window, padding=(10, 10, 10, 0))
         filter_frame.pack(fill=tk.X)
 

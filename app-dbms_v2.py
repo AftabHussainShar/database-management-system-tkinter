@@ -407,8 +407,7 @@ class DBMSApp(tk.Tk):
             self.window.destroy()
             return
 
-        # Initialize variables
-        self.page_size = 10  # Number of rows per page
+        self.page_size = 10  
         self.current_page = 1
         self.total_pages = 0
         self.filtered_data = pd.DataFrame()

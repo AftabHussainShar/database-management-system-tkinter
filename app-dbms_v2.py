@@ -324,7 +324,6 @@ class DBMSApp(tk.Tk):
         if dob_from and dob_to:
             query += f" AND dob BETWEEN '{dob_from}' AND '{dob_to}'"
 
-        # Fetch filtered data from MySQL table (limited by pagination)
         try:
             offset = (self.current_page - 1) * self.page_size
             # query += f" LIMIT {self.page_size} OFFSET {offset}"
@@ -339,7 +338,6 @@ class DBMSApp(tk.Tk):
                 self.filtered_data['dob'] = self.filtered_data['dob'].dt.strftime('%m/%d/%Y')  # Format 'dob' column to MM/DD/YYYY
         except mysql.connector.Error as err:
             messagebox.showerror("MySQL Error", f"Error fetching data: {err}")
-        # Export filtered data to Excel file
         file_path = filedialog.asksaveasfilename(defaultextension=".xlsx", filetypes=[("Excel files", "*.xlsx")])
         if file_path:
             try:

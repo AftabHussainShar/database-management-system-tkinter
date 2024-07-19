@@ -465,7 +465,7 @@ class DBMSApp(tk.Tk):
         self.tree.heading("provider_name", text="Provider Name")
         self.tree.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
 
-        # Populate dropdown values
+     
         # self.populate_dropdown_values()
         self.fetch_and_filter_data_2()
         

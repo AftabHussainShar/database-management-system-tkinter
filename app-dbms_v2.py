@@ -365,7 +365,6 @@ class DBMSApp(tk.Tk):
         self.window.title("Complete: Viewer and Filtration")
         self.window.geometry("1350x350")
 
-        # Initialize MySQL connection
         try:
             self.connection = mysql.connector.connect(
                 host='localhost',
@@ -379,7 +378,6 @@ class DBMSApp(tk.Tk):
             self.window.destroy()
             return
 
-        # Initialize variables
         self.page_size = 10  # Number of rows per page
         self.current_page = 1
         self.total_pages = 0

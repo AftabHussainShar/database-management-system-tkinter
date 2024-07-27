@@ -193,9 +193,6 @@ class DBMSApp(tk.Tk):
 
         # pagination_frame.pack(fill=tk.X, padx=10, pady=10)
 
-        # prev_button = ttk.Button(pagination_frame, text="Previous", command=self.prev_page)
-        # prev_button.pack(side=tk.LEFT, padx=5)
-
         # self.page_label = ttk.Label(pagination_frame, text="")
         # self.page_label.pack(side=tk.LEFT, padx=5)
 

@@ -190,7 +190,6 @@ class DBMSApp(tk.Tk):
         self.tree.heading("ins_type", text="Insurance Type")
         self.tree.heading("dob", text="DOB")
         self.tree.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
-        # self.page_label.pack(side=tk.LEFT, padx=5)
         self.fetch_and_filter_data()
 
     def populate_ins_type_dropdown(self):

@@ -192,7 +192,6 @@ class DBMSApp(tk.Tk):
         self.tree.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
         # self.page_label.pack(side=tk.LEFT, padx=5)
 
-        # next_button = ttk.Button(pagination_frame, text="Next", command=self.next_page)
         # next_button.pack(side=tk.LEFT, padx=5)
 
         # Initialize with first page data

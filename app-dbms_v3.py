@@ -191,8 +191,6 @@ class DBMSApp(tk.Tk):
         self.tree.heading("dob", text="DOB")
         self.tree.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
 
-        # Pagination buttons
-        # pagination_frame = ttk.Frame(self.window)
         # pagination_frame.pack(fill=tk.X, padx=10, pady=10)
 
         # prev_button = ttk.Button(pagination_frame, text="Previous", command=self.prev_page)
